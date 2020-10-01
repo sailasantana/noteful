@@ -1,14 +1,24 @@
 import React from 'react';
 import STORE from './dummy-store';
+import './folder.css'
 
-function folder(){
+function Folder(){
+
+    const folderItems = STORE.folders.map((folder) =>
+    <li key={folder.id} className = "folder">
+      {folder.name}
+    
+    </li>)
  
     return (
-        <ul>
-           <li>{STORE.folders[0].name}</li>
+        <div className = "allFolders">
+        <ul >
+           {folderItems}  
         </ul>
+        <button>Add A Folder</button>
+        </div>
     )
  
 }
 
-export default folder;
+export default Folder;

@@ -1,0 +1,10 @@
+.note {
+    list-style-type: none;
+    border: 1px solid black;
+    padding: 50px 50px 50px 50px ;
+}
+
+.allNotes {
+  
+    padding: 10px 10px 10px 10px ;
+}
